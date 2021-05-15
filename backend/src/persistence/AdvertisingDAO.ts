@@ -16,7 +16,7 @@ export class AdvertisingDAO implements Omit<IBaseDAO<Advertising>, 'ReadAll' | '
     return this.repository.save(ad);
   }
 
-  ReadAll(page: number, pageSize: number) {
+  ReadAll(page = 1, pageSize = 0) {
     return this.repository.findAndCount({
       relations: ['category', 'address', 'owner', 'images'],
       where: { state: AdvertisingState.VISIBLE },

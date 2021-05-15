@@ -62,7 +62,7 @@ export class AdvertisingService {
     };
   }
 
-  async ListAllAds(page: number, pageSize: number) {
+  async ListAllAds(page?: number, pageSize?: number) {
     const [ads, total] = await this.dao.ReadAll(page, pageSize);
 
     const adsDTO = await Promise.all(ads.map((ad) => this.GetAdvertisingDTO(ad)));

@@ -46,9 +46,11 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
+    "rdflib": "^2.2.0",
     "socket.io": "^4.0.1",
     "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.31"
+    "typeorm": "^0.2.31",
+    "xml": "^1.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
@@ -75,7 +77,9 @@
     "@types/passport": "^1.0.6",
     "@types/passport-jwt": "^3.0.5",
     "@types/passport-local": "^1.0.33",
+    "@types/rdflib": "^1.2.0",
     "@types/supertest": "^2.0.10",
+    "@types/xml": "^1.0.5",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
     "babel-plugin-transform-typescript-metadata": "^0.3.2",
